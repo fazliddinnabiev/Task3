@@ -1,0 +1,15 @@
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.csproj.AssemblyReference.cache
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.AssemblyInfoInputs.cache
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.AssemblyInfo.cs
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.csproj.CoreCompileInputs.cache
+C:\Users\fazli\RiderProjects\Task3\Game\bin\Debug\net6.0\Game.exe
+C:\Users\fazli\RiderProjects\Task3\Game\bin\Debug\net6.0\Game.deps.json
+C:\Users\fazli\RiderProjects\Task3\Game\bin\Debug\net6.0\Game.runtimeconfig.json
+C:\Users\fazli\RiderProjects\Task3\Game\bin\Debug\net6.0\Game.dll
+C:\Users\fazli\RiderProjects\Task3\Game\bin\Debug\net6.0\Game.pdb
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.dll
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\refint\Game.dll
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.pdb
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\Game.genruntimeconfig.cache
+C:\Users\fazli\RiderProjects\Task3\Game\obj\Debug\net6.0\ref\Game.dll
