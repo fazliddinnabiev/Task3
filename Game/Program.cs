@@ -2,7 +2,7 @@
 public static class Game
 {
     //List for storing game moves
-    private static List<string> _moves = new List<string>();
+    private static List<string> _moves = new();
     // variable to store input to check whether user wants to continue playing
     private static string _conditionOfMenu = "n";
     private static int _userMove;
@@ -92,7 +92,6 @@ public static class Game
                 }
                 else
                 {
-                    PrintComputerMove();
                     GameRules.DetermineWinner(_moves, _userMove - 1);
                     GetInputForConditionOfMenu();
                 }
@@ -126,14 +125,5 @@ public static class Game
     private static void PrintHmacOfComputerMove()
     {
         WriteLine(CalculatingHmac.HmacValue);
-    }
-    
-    /// <summary>
-    /// Prints computer move
-    /// </summary>
-    private static void PrintComputerMove()
-    {
-        var computerMove = _moves[CalculatingHmac.ComputerMove];
-        WriteLine($"Computer move: {computerMove}");
     }
 }

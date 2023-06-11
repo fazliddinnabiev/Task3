@@ -34,15 +34,15 @@ public static class GameRules
     /// <summary>
     /// checks whether the arguments passed to the program are unique
     /// </summary>
-    /// <param name="arguments">list of strings</param>
+    /// <param name="gameMoves">list of strings</param>
     /// <returns>true if arguments are not unique otherwise false</returns>
-    internal static bool CheckRepetition(List<string> arguments)
+    internal static bool CheckRepetition(List<string> gameMoves)
     {
-        for (var index = 0; index < arguments.Count; index++)
+        for (var index = 0; index < gameMoves.Count; index++)
         {
-            for (var j = index + 1; j < arguments.Count; j++)
+            for (var j = index + 1; j < gameMoves.Count; j++)
             {
-                if (arguments[index] == arguments[j])
+                if (gameMoves[index] == gameMoves[j])
                 {
                     return true;
                 }
@@ -62,18 +62,16 @@ public static class GameRules
         var computerMove = CalculatingHmac.ComputerMove;
         var key = CalculatingHmac.Key;
         var halfOfMoves = movesOfGame.Count / 2;
-        var indexOfUserMove = movesOfGame.IndexOf(movesOfGame[userMove]);
-        var indexOfComputerMove = movesOfGame.IndexOf(movesOfGame[computerMove]);
-        if (indexOfUserMove == indexOfComputerMove)
+        if (userMove == computerMove)
         {
             WriteLine($"Your move: {movesOfGame[userMove]}");
             WriteLine($"Computer move: {movesOfGame[computerMove]}");
             WriteLine($"HMAC key: {key}");
             WriteLine("Draw");
         }
-        else if (indexOfUserMove > indexOfComputerMove)
+        else if (userMove > computerMove)
         {
-            if (indexOfUserMove - indexOfComputerMove <= halfOfMoves)
+            if (userMove - computerMove <= halfOfMoves)
             {
                 WriteLine($"Your move: {movesOfGame[userMove]}");
                 WriteLine($"Computer move: {movesOfGame[computerMove]}");
@@ -90,7 +88,7 @@ public static class GameRules
         }
         else
         {
-            if (indexOfComputerMove - indexOfUserMove <= halfOfMoves)
+            if (computerMove - userMove <= halfOfMoves)
             {
                 WriteLine($"Your move: {movesOfGame[userMove]}");
                 WriteLine($"Computer move: {movesOfGame[computerMove]}");
